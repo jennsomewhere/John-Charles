@@ -7,32 +7,136 @@
 body{
   overflow-x: hidden;
 }
-*{
+/* *{
   border: 1px solid rgb(220,220,220);
-}
+} */
 
 /* ----- COLOURS -----*/
   /* rgb(19,15,64) deep cove - navy blue  */
+  /* rgb(251,197,49) gold - yellow */
 
 /* ----- TYPOGRAPHY -----*/
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.5rem;
+}
+h3 {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 2.5rem;
+}
+h5 {
+  font-size: 2rem;
+}
+h6 {
+  font-size: 1.5rem;
+}
+
+/* ----- HELPERS -----*/
+
+.background-black {
+  background-color: #000;
+}
+.background-blue {
+  background-color: rgb(13,12,33);
+}
+.center {
+  text-align: center;
+}
+.white {
+  color: white;
+}
+.yellow {
+  color: rgb(199,157,99);
+}
+.border-yellow {
+  border-style: double;
+  border: 1px solid rgb(199,157,99);
+}
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
 }
 
 /* ----- LAYOUT, PADDING, MARGIN -----*/
 
-/* ----- UNIVERSAL STYLES -----*/
+.padded1{
+  padding: 1rem;
+}
+.padded3 {
+  padding: 3rem;
+}
+.padded4 {
+  padding: 4rem;
+}
+.bottom6 {
+  padding-bottom: 6rem;
+}
+
+/* ----- INDEX PAGE -----*/
+
+.mainHeading {
+  background-color: rgb(13,12,33);
+  min-height: 60vh;
+  color: rgb(199,157,99);
+  text-transform: uppercase;
+  outline: 2px solid rgb(199,157,99);
+  outline-offset: -2rem;
+}
+.about,
+.services {
+  font-size: 1.2rem;
+}
+.spacer {
+  min-height: 60vh;
+}
 
 /* ----- HEADER STYLES -----*/
 .parallax {
-  background-image: url();
-  height: 100%;
+  background-image: url(/Images/stock.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  color: white;
+  z-index: 0;
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  z-index: 1;
+  min-height: 100vh;
+  min-width: 100vw;
+  color: white;
+}
+header h5 {
+  color: rgb(199,157,99);
 }
 
 /* ----- FOOTER STYLES -----*/
+
+footer {
+  min-height: 10vh;
+  color: rgb(199,157,99);
+  padding: 1rem;
+}
+footer p {
+  font-size: 0.9rem;
+  padding-left: 1rem;
+}
+.icon {
+  font-size: 1.7rem;
+  text-align: right;
+}
