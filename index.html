@@ -2,12 +2,17 @@
 layout: default
 title: John E. Charles Accountant
 ---
-{% include header.html %}
+
+{% include nav.html %}
+
+{% include hero.html %}
 
 <section class="grid-middle-center">
-  <div class="col-6_sm-12 grid-middle-center mainHeading">
-    <h2>About</h2>
-  </div>
+  <a href="/about" class="mainHeading col-6_sm-12 grid-middle-center">
+    <div class="grid-middle-center mainHeading">
+      <h2>About</h2>
+    </div>
+  </a>
   <div class="col-6_sm-12 padded4 about">
     <p>I'm a Registered Tax agent with the Tax Practitioner's Board and have been practising for more than 30 years.<br><br>
 
@@ -18,16 +23,19 @@ title: John E. Charles Accountant
   <div class="col-6_sm-12 padded4 services">
     <p>Personal tax returns are my passion and a specialty, but I can help you with BAS lodgements, Rental Property Returns, Partnership Returns and Company Returns.</p>
   </div>
-  <div class="col-6_sm-12 grid-middle-center mainHeading">
-    <h2>Services</h2>
-</div>
+  <a href="/services" class="mainHeading col-6_sm-12 grid-middle-center">
+    <div class="grid-middle-center mainHeading">
+      <h2>Services</h2>
+    </div>
+  </a>
+
 </section>
 
 <section>
   <div class="grid-middle-center position-relative background-black">
     <div class="parallax position-absolute">
     </div>
-    <div class="spacer position-relative padded4">
+    <div class="testimonials position-relative padded4">
         {% include testimonials.html %}
     </div>
   </div>
@@ -40,16 +48,16 @@ title: John E. Charles Accountant
   <div class="col-12">
     <h3 class="white center padded3">Why Choose John E. Charles Accountant?</h3>
   </div>
-  <div class="col-3_sm-12 border-yellow">
-    <h4 class="yellow center padded1">Transparent</h4>
+  <div class="col-3_sm-12 border-emphasis">
+    <h4 class="emphasis center padded1">Transparent</h4>
     <p class="white center padded1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
-  <div class="col-3_sm-12 border-yellow">
-    <h4 class="yellow center padded1">Experienced</h4>
+  <div class="col-3_sm-12 border-emphasis">
+    <h4 class="emphasis center padded1">Experienced</h4>
     <p class="white center padded1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
-  <div class="col-3_sm-12 border-yellow">
-    <h4 class="yellow center padded1">Invested in You</h4>
+  <div class="col-3_sm-12 border-emphasis">
+    <h4 class="emphasis center padded1">Invested in You</h4>
     <p class="white center padded1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
 </section>

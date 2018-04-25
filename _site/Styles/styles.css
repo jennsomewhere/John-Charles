@@ -12,14 +12,17 @@ body{
 } */
 
 /* ----- COLOURS -----*/
-  /* rgb(19,15,64) deep cove - navy blue  */
-  /* rgb(251,197,49) gold - yellow */
+  /* rgb(13,12,33) navy blue  */
+  /* rgb(232,162,66) gold  */
 
 /* ----- TYPOGRAPHY -----*/
 
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
+}
+.blackhansans {
+  font-family: 'Black Han Sans', sans-serif;
 }
 h1 {
   font-size: 4rem;
@@ -48,18 +51,21 @@ h6 {
 .background-blue {
   background-color: rgb(13,12,33);
 }
+
 .center {
   text-align: center;
 }
 .white {
   color: white;
 }
-.yellow {
-  color: rgb(199,157,99);
+.emphasis {
+  color: rgb(232,162,66);
+  font-family: 'Black Han Sans', sans-serif;
+  font-weight: lighter;
 }
-.border-yellow {
+.border-emphasis {
   border-style: double;
-  border: 1px solid rgb(199,157,99);
+  border: 1px solid rgb(232,162,66);
 }
 .position-relative {
   position: relative;
@@ -67,14 +73,22 @@ h6 {
 .position-absolute {
   position: absolute;
 }
-
+.align-right {
+  text-align: right;
+}
 /* ----- LAYOUT, PADDING, MARGIN -----*/
 
-.padded1{
+.padded1 {
   padding: 1rem;
+}
+.padded1b {
+  padding-bottom: 3rem;
 }
 .padded3 {
   padding: 3rem;
+}
+.padded3tb {
+  padding: 3rem 0;
 }
 .padded4 {
   padding: 4rem;
@@ -82,26 +96,144 @@ h6 {
 .bottom6 {
   padding-bottom: 6rem;
 }
+.padding-left {
+  padding-left: 4rem;
+}
 
 /* ----- INDEX PAGE -----*/
 
 .mainHeading {
   background-color: rgb(13,12,33);
   min-height: 60vh;
-  color: rgb(199,157,99);
+  color: rgb(232,162,66);
   text-transform: uppercase;
-  outline: 2px solid rgb(199,157,99);
+  outline: 2px solid rgb(232,162,66);
   outline-offset: -2rem;
+  width: 100%;
+  text-decoration: none;
 }
 .about,
 .services {
   font-size: 1.2rem;
 }
-.spacer {
-  min-height: 60vh;
+.connectwithme a{
+  text-decoration: none;
+  color: inherit;
+}
+.connectwithme {
+  font-size: 1.1rem;
+  color: rgb(13,12,33);
+}
+.connectwithme .icon {
+  padding: 0.3rem;
+}
+.contactform input,
+.contactform textarea {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: lowercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  padding: 0.3rem;
+  border-radius: 3px;
+  border: 1px solid rgb(12,12,33);
+}
+input[type=submit] {
+  background-color: rgb(232,162,66);
+  color: white;
+  font-weight: bold;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 1.1rem;
 }
 
-/* ----- HEADER STYLES -----*/
+/* ----- ABOUT PAGE -----*/
+
+.profile {
+  background-image: url(/Images/profile.png);
+  background-position: center;
+  background-size: cover;
+  min-height: 20vw;
+  min-width: 20vw;
+  border: 1px solid rgba(13,12,33,0.5);
+
+}
+.mainText {
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+}
+
+/* ----- TESTIMONIAL STYLES -----*/
+
+.testimonials {
+  min-height: 60vh;
+}
+.testimonial {
+  margin-top: -35px;
+  padding: 1rem;
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+.background-testimonial {
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 1px;
+  min-width: 40vw;
+  position: absolute;
+}
+.author {
+  font-size: 1.7rem;
+}
+.author-from {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+.quote-icon {
+  margin-left: -65px;
+  margin-top: -40px;
+  color: rgb(232,162,66);
+  font-size: 4rem;
+}
+.prev, .next {
+  cursor: pointer;
+  padding: 1rem;
+  color: rgba(13,12,33,0.6);
+  font-weight: bold;
+  font-size: 2rem;
+  user-select: none;
+  border-radius: 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(13,12,33,0.6);
+  color: white;
+}
+
+/* ----- NAV STYLES -----*/
+.mainMenu {
+  background-color: rgb(13,12,33);
+  color: white;
+  padding: 1.2rem;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  opacity: 0.9;
+  transition: 0.7s;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.mainMenu a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+.mainMenu a:hover {
+  color: rgb(232,162,66);
+}
+
+/* ----- HERO STYLES -----*/
 .parallax {
   background-image: url(/Images/stock.jpg);
   background-attachment: fixed;
@@ -110,26 +242,30 @@ h6 {
   background-size: cover;
   color: white;
   z-index: 0;
-  opacity: 0.4;
+  opacity: 0.5;
   width: 100%;
   height: 100%;
 }
-
-.title {
+.title,
+.banner {
   z-index: 1;
   min-height: 100vh;
   min-width: 100vw;
   color: white;
 }
-header h5 {
-  color: rgb(199,157,99);
+.hero h5,
+.banner h5 {
+  color: rgb(232,162,66);
+}
+.banner {
+  min-height: 60vh;
 }
 
 /* ----- FOOTER STYLES -----*/
 
 footer {
   min-height: 10vh;
-  color: rgb(199,157,99);
+  color: rgb(232,162,66);
   padding: 1rem;
 }
 footer p {
@@ -139,4 +275,12 @@ footer p {
 .icon {
   font-size: 1.7rem;
   text-align: right;
+}
+.designedby {
+  padding-bottom: 0;
+  border-top: 1px solid rgb(232,162,66);
+}
+.designedby p {
+  padding-top: 1rem;
+  font-size: 0.8rem;
 }

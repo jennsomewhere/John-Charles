@@ -1,6 +1,67 @@
 <section class="testimonials">
-  <div class="white">
-    <h2>testimonials</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <div class="position-relative">
+
+    <div class="background-testimonial padded3">
+      <h2 class="quote-icon"><i class="fas fa-quote-left"></i></h2>
+
+      <div class="quote">
+        <p class="testimonial">Thanks John for getting me every cent I thought I was entitled to. It was more than a pleasant surprise when you found me more as well!</p>
+        <div class="align-right">
+          <p class="author">Frank</p>
+          <p class="author-from">Keilor, VIC</p>
+        </div>
+      </div>
+
+      <div class="quote">
+        <p class="testimonial">Thanks for fitting me in John. As a shift worker, I was rapt when you were able to do my return for me so early in the morning. See you next year.</p>
+        <div class="align-right">
+          <p class="author">Bob</p>
+          <p class="author-from">Glenroy, VIC</p>
+        </div>
+      </div>
+
+      <div class="quote">
+        <p class="testimonial">Dropped my receipts off to John. Ready for me to sign the next day. Minimal time lost on the golf course. Thanks John.</p>
+        <div class="align-right">
+          <p class="author">Frank</p>
+          <p class="author-from">Pascoe Vale, VIC</p>
+        </div>
+      </div>
+
+      <div class="quote">
+        <p class="testimonial">I'm very happy to recommend John to anyone. He was very knowledgeable and efficient. Thank-you.</p>
+        <div class="align-right">
+          <p class="author">Chris</p>
+          <p class="author-from">Coburg, VIC</p>
+        </div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-angle-left"></i></a>
+      <a class="next" onclick="plusSlides(1)"><i class="fas fa-angle-right"></i></a>
+    </div>
+
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("quote");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      slides[slideIndex-1].style.display = "block";
+    }
+    </script>
   </div>
 </section>

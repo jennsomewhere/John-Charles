@@ -5,7 +5,8 @@
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Montserrat:600" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="/Styles/gridlex.css">
     <link rel="stylesheet" type="text/css" href="/Styles/styles.css">
 
@@ -15,8 +16,33 @@
   <body>
 
     <div>
-      <header>
-  <div class="grid-12">
+      <header class="grid-middle-center-noGutter mainMenu">
+  <div class="col-6">
+  </div>
+  <div class="col-6">
+    <div class="grid-middle-center-noGutter-spaceAround">
+      <div class="col-2">
+        <a href="/">Home</a>
+      </div>
+      <div class="col-2">
+        <a href="/services">Services</a>
+      </div>
+      <div class="col-2">
+        <a href="/faq">FAQs</a>
+      </div>
+      <div class="col-2">
+        <a href="/about">About</a>
+      </div>
+      <div class="col-2">
+        <a href="/#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<section class="hero">
+  <div class="">
     <div class="grid-middle-center position-relative background-black">
       <div class="parallax position-absolute">
       </div>
@@ -28,13 +54,15 @@
       </div>
     </div>
   </div>
-</header>
+</section>
 
 
 <section class="grid-middle-center">
-  <div class="col-6_sm-12 grid-middle-center mainHeading">
-    <h2>About</h2>
-  </div>
+  <a href="/about" class="mainHeading col-6_sm-12 grid-middle-center">
+    <div class="grid-middle-center mainHeading">
+      <h2>About</h2>
+    </div>
+  </a>
   <div class="col-6_sm-12 padded4 about">
     <p>I'm a Registered Tax agent with the Tax Practitioner's Board and have been practising for more than 30 years.<br><br>
 
@@ -45,20 +73,84 @@
   <div class="col-6_sm-12 padded4 services">
     <p>Personal tax returns are my passion and a specialty, but I can help you with BAS lodgements, Rental Property Returns, Partnership Returns and Company Returns.</p>
   </div>
-  <div class="col-6_sm-12 grid-middle-center mainHeading">
-    <h2>Services</h2>
-</div>
+  <a href="/services" class="mainHeading col-6_sm-12 grid-middle-center">
+    <div class="grid-middle-center mainHeading">
+      <h2>Services</h2>
+    </div>
+  </a>
+
 </section>
 
 <section>
   <div class="grid-middle-center position-relative background-black">
     <div class="parallax position-absolute">
     </div>
-    <div class="spacer position-relative padded4">
+    <div class="testimonials position-relative padded4">
         <section class="testimonials">
-  <div class="white">
-    <h2>testimonials</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <div class="position-relative">
+
+    <div class="background-testimonial padded3">
+      <h2 class="quote-icon"><i class="fas fa-quote-left"></i></h2>
+
+      <div class="quote">
+        <p class="testimonial">Thanks John for getting me every cent I thought I was entitled to. It was more than a pleasant surprise when you found me more as well!</p>
+        <div class="align-right">
+          <p class="author">Frank</p>
+          <p class="author-from">Keilor, VIC</p>
+        </div>
+      </div>
+
+      <div class="quote">
+        <p class="testimonial">Thanks for fitting me in John. As a shift worker, I was rapt when you were able to do my return for me so early in the morning. See you next year.</p>
+        <div class="align-right">
+          <p class="author">Bob</p>
+          <p class="author-from">Glenroy, VIC</p>
+        </div>
+      </div>
+
+      <div class="quote">
+        <p class="testimonial">Dropped my receipts off to John. Ready for me to sign the next day. Minimal time lost on the golf course. Thanks John.</p>
+        <div class="align-right">
+          <p class="author">Frank</p>
+          <p class="author-from">Pascoe Vale, VIC</p>
+        </div>
+      </div>
+
+      <div class="quote">
+        <p class="testimonial">I'm very happy to recommend John to anyone. He was very knowledgeable and efficient. Thank-you.</p>
+        <div class="align-right">
+          <p class="author">Chris</p>
+          <p class="author-from">Coburg, VIC</p>
+        </div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-angle-left"></i></a>
+      <a class="next" onclick="plusSlides(1)"><i class="fas fa-angle-right"></i></a>
+    </div>
+
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("quote");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      slides[slideIndex-1].style.display = "block";
+    }
+    </script>
   </div>
 </section>
 
@@ -73,45 +165,58 @@
   <div class="col-12">
     <h3 class="white center padded3">Why Choose John E. Charles Accountant?</h3>
   </div>
-  <div class="col-3_sm-12 border-yellow">
-    <h4 class="yellow center padded1">Transparent</h4>
+  <div class="col-3_sm-12 border-emphasis">
+    <h4 class="emphasis center padded1">Transparent</h4>
     <p class="white center padded1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
-  <div class="col-3_sm-12 border-yellow">
-    <h4 class="yellow center padded1">Experienced</h4>
+  <div class="col-3_sm-12 border-emphasis">
+    <h4 class="emphasis center padded1">Experienced</h4>
     <p class="white center padded1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
-  <div class="col-3_sm-12 border-yellow">
-    <h4 class="yellow center padded1">Invested in You</h4>
+  <div class="col-3_sm-12 border-emphasis">
+    <h4 class="emphasis center padded1">Invested in You</h4>
     <p class="white center padded1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
 </section>
 
-  <div class="grid-middle-center-noGutter padded3">
+  <div class="grid-middle-center-spaceAround padded3tb" id="contact">
+
   <div class="col-3_sm-12 connectwithme">
-    <h3>Let's Connect</h3>
-    <p>facebook: facebook.com/jecaccountant?</p>
+    <h3 class="padded1b"><span class="emphasis">Let's Connect</span></h3>
+    <div class="grid-middle-center">
+      <div class="col-2 grid-middle-center icon"><i class="fab fa-facebook"></i></div>
+      <div class="col-10 grid-middle"><a href="http://www.facebook.com/jecaccountant"> facebook.com/jecaccountant</a></div>
+
+      <div class="col-2 grid-middle-center icon"><i class="far fa-envelope"></i></div>
+      <div class="col-10 grid-middle"><a href="mailto:jecacct@hotmail.com?subject=Inquiry from your Website">jecacct@hotmail.com</a></div>
+
+      <div class="col-2 grid-middle-center icon"><i class="fas fa-phone"></i></div>
+      <div class="col-10 grid-middle"><a href="tel:0393632522"> 03 9363 2522</a></div>
+
+      <div class="col-2 grid-middle-center icon"><i class="fas fa-mobile-alt"></i></div>
+      <div class="col-10 grid-middle"><a href="tel:0452184618"> 0452 184 618</a></div>
+
+      <div class="col-2 grid-middle-center icon"><i class="fas fa-map-marker-alt"></i></div>
+      <div class="col-10 grid-middle">20 Sharrock Close<br>
+      Caroline Springs, VIC 3023</div>
+    </div>
   </div>
-  <div class="col-3 contactform" id="contact">
+
+  <div class="col-4_sm-12 contactform">
+    <p class="padded1">Request a consultation with the form below</p>
     <form action="https://formspree.io/jecacct@hotmail.com" method="POST">
         <input name="name" placeholder="name" type="text"><br>
         <input name="_replyto" placeholder="email" type="email"><br>
         <textarea name="comments" rows="7" input placeholder="comments" type="text"></textarea><br>
         <input type="submit" value="SUBMIT">
-        <input type="hidden" name="_next" value="/contact-confirm.html#contact" />
+        <!-- <input type="hidden" name="_next" value="/contact-confirm.html#contact" /> -->
       </form>
   </div>
-  <div class="col-3_sm-12 address">
-    <p>John E. Charles</p>
-    <p>20 Sharrock Close</p>
-    <p>Caroline Springs, VIC 3023</p>
-    <p>Phone: 03 9363 2522</p>
-    <p>Mobile: 0452 184 618</p>
-    <p>Email: jecacct@hotmail.com</p>
-  </div>
+
   <div class="col-3_sm-12 map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11082.904519430023!2d144.74283904497418!3d-37.736776054735365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65f583d022b4f%3A0x6416766766fe9a0c!2sJohn+E.Charles+Accountant!5e0!3m2!1sen!2sau!4v1524490803325" width="350" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe src="https://snazzymaps.com/embed/66787" width="100%" height="310px" style="border:1.5px solid rgb(232,162,66);"></iframe>
   </div>
+
 </div>
 
 
@@ -155,6 +260,9 @@
       </div>
     </div>
   </div>
+  <div class="col-12-middle center designedby">
+    <p><i class="far fa-copyright"></i> John E. Charles Accountant, 2018 | All rights reserved | Web Dev & Design by Jennifer Simpson</p>
+  </div>
 </footer>
 
       </div>
@@ -163,6 +271,10 @@
   </section>
 
     </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+      <script src="/js/navappear.js"></script>
 
   </body>
 
