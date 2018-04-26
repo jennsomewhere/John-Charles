@@ -42,6 +42,13 @@ h5 {
 h6 {
   font-size: 1.5rem;
 }
+a:hover {
+  color: rgb(232,162,66);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 /* ----- HELPERS -----*/
 
@@ -75,6 +82,9 @@ h6 {
 }
 .align-right {
   text-align: right;
+}
+.bottom-border {
+  border-bottom: 2px solid rgb(13,12,33);
 }
 /* ----- LAYOUT, PADDING, MARGIN -----*/
 
@@ -116,10 +126,7 @@ h6 {
 .services {
   font-size: 1.2rem;
 }
-.connectwithme a{
-  text-decoration: none;
-  color: inherit;
-}
+
 .connectwithme {
   font-size: 1.1rem;
   color: rgb(13,12,33);
@@ -156,10 +163,9 @@ input[type=submit] {
   background-image: url(/Images/profile.png);
   background-position: center;
   background-size: cover;
-  min-height: 20vw;
-  min-width: 20vw;
+  min-height: 25vw;
+  min-width: 25vw;
   border: 1px solid rgba(13,12,33,0.5);
-
 }
 .mainText {
   font-size: 1.3rem;
