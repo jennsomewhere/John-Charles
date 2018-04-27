@@ -58,7 +58,9 @@ a {
 .background-blue {
   background-color: rgb(13,12,33);
 }
-
+.right {
+  text-align: right;
+}
 .center {
   text-align: center;
 }
@@ -117,6 +119,9 @@ a {
 }
 .bottom6 {
   padding-bottom: 6rem;
+}
+.padded6lr {
+  padding: 0 6rem;
 }
 .padding-left {
   padding-left: 4rem;
@@ -249,10 +254,17 @@ input[type=submit] {
 .bg-img10 {
   background-image: url("../Images/payinvoice.jpg");
 }
+
+/* ----- ABOUT PAGE -----*/
+
+.services {
+  padding: 2rem 3rem;
+}
+
 /* ----- TESTIMONIAL STYLES -----*/
 
 .testimonials {
-  min-height: 60vh;
+  min-height: 45vh;
 }
 .testimonial {
   margin-top: -35px;
@@ -311,11 +323,38 @@ input[type=submit] {
   text-decoration: none;
   color: white;
   transition: 0.5s;
+  padding: 1.2rem;
 }
 .mainMenu a:hover {
   color: rgb(232,162,66);
 }
-
+.dropdown-nav{
+  position: relative;
+  z-index: 2;
+}
+.dropdown-content{
+  position: absolute;
+  background-color: rgb(13,12,33);
+  color: white;
+  display: none;
+  text-decoration: none;
+  padding: 2rem 2rem 1.2rem 2rem;
+}
+#navservices { /*main menu dropdown*/
+  left: -1rem;
+}
+.dropdown-nav:hover .dropdown-content{
+  display: block;
+  text-align: center;
+  min-width: 150px;
+  white-space: nowrap;
+  border-radius: 3px;
+  left: -5px;
+}
+.dropdown-content a {
+  display: block;
+  padding: 5%;
+}
 /* ----- HERO STYLES -----*/
 .parallax {
   background-image: url(/Images/stock.jpg);
@@ -367,3 +406,5 @@ footer p {
   padding-top: 1rem;
   font-size: 0.8rem;
 }
+
+/* ----- MEDIA QUERIES -----*/

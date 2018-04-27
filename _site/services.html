@@ -25,7 +25,12 @@
         <a href="/">Home</a>
       </div>
       <div class="col-2">
-        <a href="/services">Services</a>
+        <span class="dropdown-nav">
+          <a href="/services">Services</a>
+            <div id="navservices" class="dropdown-content">
+              <a href="/services#pricing">Pricing</a>
+            </div>
+        </span>
       </div>
       <div class="col-2">
         <a href="/faq">FAQs</a>
@@ -58,37 +63,176 @@
 
 
 <section class="pageTitle padded3tlr center">
-  <h1 class="emphasis">Services</h1>
+  <h1 class="emphasis bottom-border padded3b">Services</h1>
 </section>
 <div class="padded3 center">
   <p class="mainText">
     Whether you require assistance with filing and lodgement, compliance services, or planning and advising, I have a number of services and solutions on offer.<br><br> As an individual, small or medium-sized business, you have the advantage of over 30 years of experience and expertise working to design a customized program for you.
   </p>
 </div>
-<div class="padded3 center">
-  <p class="mainText">
-
-  </p>
+<div class="grid mainText services">
+  <div class="col-2 right">
+    <i class="fas fa-share"></i>
+  </div>
+  <div class="col-8">
+    Tax return preparation and lodgement – individuals and all forms of business entities
+  </div>
+  <div class="col-2 right"></div>
+  <div class="col-2 right">
+    <i class="fas fa-share"></i>
+  </div>
+  <div class="col-8">
+    Taxation planning, including tax advice, tax minimisation strategies and opportunities</div>
+    <div class="col-2 right"></div>
+  <div class="col-2 right">
+    <i class="fas fa-share"></i>
+  </div>
+  <div class="col-8">
+    Capital gains tax advice and planning including assistance with the generous capital gains tax small business concessions available</div>
+    <div class="col-2 right"></div>
+  <div class="col-2 right">
+    <i class="fas fa-share"></i>
+  </div>
+  <div class="col-8">
+    Division 7A compliance</div>
+    <div class="col-2 right"></div>
+  <div class="col-2 right">
+    <i class="fas fa-share"></i>
+  </div>
+  <div class="col-8">
+    Business Activity Statement (BAS) and Installment Activity Statement (IAS) preparation and lodgement – individuals and all forms of business entities</div>
+    <div class="col-2 right"></div>
+  <div class="col-2 right">
+    <i class="fas fa-share"></i>
+  </div>
+  <div class="col-8">
+    Fringe benefits tax compliance including fringe benefits tax return preparation and lodgement</div>
+    <div class="col-2 right"></div>
+  <div class="col-2 right">
+    <i class="fas fa-share"></i>
+  </div>
+  <div class="col-8">
+    Monitoring of future tax payable with preparation of interim projections and structure review</div>
+    <div class="col-2 right"></div>
+  <div class="col-2 right">
+    <i class="fas fa-share"></i>
+  </div>
+  <div class="col-8">
+    State tax advice and planning including: land tax; payroll tax and stamp duty</div>
+    <div class="col-2 right"></div>
+  <div class="col-2 right">
+    <i class="fas fa-share"></i>
+  </div>
+  <div class="col-8">
+    GST planning, including GST advice minimisation strategies and opportunities including application of the GST margin scheme and GST-free going concern</div>
+    <div class="col-2 right"></div>
+  <div class="col-2 right">
+    <i class="fas fa-share"></i>
+  </div>
+  <div class="col-8">
+    Registration for GST, PAYG with the Australian Taxation Office as required and for Payroll Tax with Revenue SA as required</div>
+    <div class="col-2 right"></div>
 </div>
 
+<section>
+  <div class="grid-middle-center position-relative background-black">
+    <div class="parallax position-absolute">
+    </div>
+    <div class="testimonials position-relative padded4">
+        <section class="testimonials">
+  <div class="position-relative">
 
-<section class="padded3">
-  <div class="grid-center-spaceAround bottom-border padded3b">
-Fee Structure
-BAS Lodgement
-$ 60
-ABN Registration
-$ 60
-Personal Return
-$ 80
-Plus Rental Property
-$ 80
-Partnership Return
-$250
-Company return
-$900
+    <div class="background-testimonial padded3">
+      <h2 class="quote-icon"><i class="fas fa-quote-left"></i></h2>
+
+      <div class="quote">
+        <p class="testimonial">Thanks John for getting me every cent I thought I was entitled to. It was more than a pleasant surprise when you found me more as well!</p>
+        <div class="align-right">
+          <p class="author">Frank</p>
+          <p class="author-from">Keilor, VIC</p>
+        </div>
+      </div>
+
+      <div class="quote">
+        <p class="testimonial">Thanks for fitting me in John. As a shift worker, I was rapt when you were able to do my return for me so early in the morning. See you next year.</p>
+        <div class="align-right">
+          <p class="author">Bob</p>
+          <p class="author-from">Glenroy, VIC</p>
+        </div>
+      </div>
+
+      <div class="quote">
+        <p class="testimonial">Dropped my receipts off to John. Ready for me to sign the next day. Minimal time lost on the golf course. Thanks John.</p>
+        <div class="align-right">
+          <p class="author">Frank</p>
+          <p class="author-from">Pascoe Vale, VIC</p>
+        </div>
+      </div>
+
+      <div class="quote">
+        <p class="testimonial">I'm very happy to recommend John to anyone. He was very knowledgeable and efficient. Thank-you.</p>
+        <div class="align-right">
+          <p class="author">Chris</p>
+          <p class="author-from">Coburg, VIC</p>
+        </div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-angle-left"></i></a>
+      <a class="next" onclick="plusSlides(1)"><i class="fas fa-angle-right"></i></a>
+    </div>
+
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("quote");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      slides[slideIndex-1].style.display = "block";
+    }
+    </script>
   </div>
 </section>
+
+    </div>
+  </div>
+</section>
+
+<section class="padded3" id="pricing">
+  <div class="bottom-border padded3b">
+    <div class="pageTitle padded3b center">
+      <h1 class="emphasis bottom-border padded3b">Fee Structure</h1>
+    </div>
+    <div class="grid-middle padded6lr mainText">
+      <div class="col-6">BAS Lodgement</div>
+      <div class="col-6">$ 60</div>
+      <div class="col-6">ABN Registration</div>
+      <div class="col-6">$ 60</div>
+      <div class="col-6">Personal Return</div>
+      <div class="col-6">$ 80</div>
+      <div class="col-6">Plus Rental Property</div>
+      <div class="col-6">$ 80</div>
+      <div class="col-6">Partnership Return</div>
+      <div class="col-6">$ 250</div>
+      <div class="col-6">Company return</div>
+      <div class="col-6">$ 900</div>
+    </div>
+  </div>
+</section>
+
 
 <div class="grid-middle-center-spaceAround padded3tb" id="contact">
 
@@ -178,7 +322,6 @@ $900
 
     </div>
   </div>
-
 </section>
 
     </div>
@@ -186,7 +329,7 @@ $900
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
       <script src="/js/navappear.js"></script>
-
+      <script src="/js/scroll.js"></script>
   </body>
 
 </html>

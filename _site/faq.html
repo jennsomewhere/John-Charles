@@ -25,7 +25,12 @@
         <a href="/">Home</a>
       </div>
       <div class="col-2">
-        <a href="/services">Services</a>
+        <span class="dropdown-nav">
+          <a href="/services">Services</a>
+            <div id="navservices" class="dropdown-content">
+              <a href="/services#pricing">Pricing</a>
+            </div>
+        </span>
       </div>
       <div class="col-2">
         <a href="/faq">FAQs</a>
@@ -58,7 +63,7 @@
 
 
 <section class="pageTitle padded3tlr center">
-  <h1 class="emphasis">FAQs</h1>
+  <h1 class="emphasis bottom-border padded3b">FAQs</h1>
 </section>
 <div class="padded3 center">
   <p class="mainText">
@@ -296,7 +301,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
       <script src="/js/navappear.js"></script>
-
+      <script src="/js/scroll.js"></script>
   </body>
 
 </html>
