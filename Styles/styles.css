@@ -34,7 +34,7 @@ h3 {
   font-size: 3rem;
 }
 h4 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
 }
 h5 {
   font-size: 2rem;
@@ -138,6 +138,12 @@ a {
   outline-offset: -2rem;
   width: 100%;
   text-decoration: none;
+}
+.mainHeading h2 {
+  /* font-family: 'Black Han Sans', sans-serif; */
+  font-weight: lighter;
+  font-size: 4.5rem;
+  letter-spacing: 3px;
 }
 .about,
 .services {
@@ -408,3 +414,30 @@ footer p {
 }
 
 /* ----- MEDIA QUERIES -----*/
+
+/* mobile */
+@media screen and (max-width: 426px) {
+  html {
+    font-size: 75%;
+  }
+  .mainMenu {
+    display: none;
+  }
+  .title h1 {
+    font-size: 3rem;
+  }
+  .title h5 {
+    font-size: 1.25rem;
+    padding: 0.5rem;
+  }
+  .mainHeading h2 {
+    font-size: 3.5rem;
+  }
+  .title,
+  .banner {
+    min-height: 50vh;
+  }
+  .mainHeading {
+    min-height: 35vh;
+  }
+}
