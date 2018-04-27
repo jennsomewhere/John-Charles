@@ -7,9 +7,9 @@
 body{
   overflow-x: hidden;
 }
-/* *{
-  border: 1px solid rgb(220,220,220);
-} */
+  /* *{
+    border: 1px solid rgb(220,220,220);
+  } */
 
 /* ----- COLOURS -----*/
   /* rgb(13,12,33) navy blue  */
@@ -318,7 +318,8 @@ input[type=submit] {
 }
 
 /* ----- NAV STYLES -----*/
-.mainMenu {
+.mainMenu,
+.mobileMenu {
   background-color: rgb(13,12,33);
   color: white;
   padding: 1.2rem;
@@ -330,7 +331,8 @@ input[type=submit] {
   font-size: 1.2rem;
   text-align: center;
 }
-.mainMenu a {
+.mainMenu a,
+.mobileMenu a {
   text-decoration: none;
   color: white;
   transition: 0.5s;
@@ -420,10 +422,39 @@ footer p {
 .spacer {
   display: none;
 }
+.mobileMenu {
+  display: none;
+}
 /* ----- MEDIA QUERIES -----*/
 
-/* mobile */
-@media screen and (max-width: 1000px) {
+/* large tablet */
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 85%;
+  }
+  h4 {
+    font-size: 1.9rem;
+  }
+  .parallax {
+    background-attachment: scroll;
+  }
+  .title,
+  .banner {
+    min-height: 50vh;
+  }
+  .mainHeading {
+    min-height: 30vh;
+  }
+  .testimonials {
+    min-height: 25vh;
+  }
+  .background-testimonial {
+    min-width: 44vw;
+  }
+}
+
+/* mobile and small tablet */
+@media screen and (max-width: 769px) {
   html {
     font-size: 75%;
   }
@@ -445,6 +476,25 @@ footer p {
   .mainMenu {
     display: none;
   }
+  .mobileMenu {
+    display: block;
+  }
+  .mobileMenu {
+    font-size: 1rem;
+  }
+  .mobileMenu a {
+    padding: 1rem;
+  }
+  .littleText {
+    font-size: 0.75rem;
+    padding: 0.25rem;
+    text-align: center;
+  }
+  .navIcon {
+    font-size: 1.25rem;
+    padding: 0.25rem;
+    text-align: center;
+  }
   .title h1,
   .banner h1,
   .pageTitle h1 {
@@ -458,15 +508,11 @@ footer p {
     font-size: 1.25rem;
     padding: 0.5rem;
   }
-  .title,
-  .banner {
-    min-height: 50vh;
-  }
   .mainHeading h2 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
   .mainHeading {
-    min-height: 35vh;
+    min-height: 20vh;
   }
   .testimonials {
     display: none;
@@ -475,8 +521,8 @@ footer p {
     display: block;
   }
   .profile {
-    min-height: 60vw;
-    min-width: 60vw;
+    min-height: 40vw;
+    min-width: 40vw;
   }
   .registered {
     height: 150px;
@@ -486,7 +532,11 @@ footer p {
     padding: 0;
     font-size: 1rem;
   }
-  .parallax {
-        background-attachment: scroll;
-    }
+}
+
+@media screen and (max-width: 500px) {
+  .profile {
+    min-height: 60vw;
+    min-width: 60vw;
+  }
 }
