@@ -106,6 +106,9 @@ a {
 .padded3tb {
   padding: 3rem 0;
 }
+.padded3tlr {
+  padding: 3rem 3rem 0 3rem;
+}
 .padded4 {
   padding: 4rem;
 }
@@ -217,7 +220,7 @@ input[type=submit] {
   height: 100%;
   background-image: url("../Images/notebook.jpg");
   z-index: 0;
-  opacity: .5;
+  opacity: .7;
 }
 .bg-img2 {
   background-image: url("../Images/laptop.jpg");
