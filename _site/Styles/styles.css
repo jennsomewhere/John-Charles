@@ -133,6 +133,27 @@ a {
   padding-left: 4rem;
 }
 
+/* ----- LOADING SCREEN -----*/
+
+#loading {
+  position:fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: rgb(13,12,33);
+  color: rgb(232,162,66);
+  transition: opacity 1s linear;
+}
+#loading h6 {
+  font-size: 4rem;
+}
+
+body.loaded #loading {
+  opacity: 0;
+}
+
 /* ----- INDEX PAGE -----*/
 
 .mainHeading {
