@@ -99,6 +99,9 @@ a {
 .padded1b {
   padding-bottom: 1rem;
 }
+.padded2 {
+  padding: 2rem;
+}
 .padded3b {
   padding-bottom: 3rem;
 }
@@ -200,7 +203,6 @@ input[type=submit] {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-
 }
 .mainText {
   font-size: 1.3rem;
@@ -428,12 +430,28 @@ footer p {
   h3 {
     font-size: 2.5rem;
   }
+  .padded3 {
+    padding: 1rem;
+  }
+  .padded3tlr {
+    padding: 1rem 1rem 0 1rem;
+  }
+  .padded3b {
+    padding-bottom: 1rem;
+  }
+  .padded6lr {
+    padding: 0;
+  }
   .mainMenu {
     display: none;
   }
   .title h1,
-  .banner h1 {
+  .banner h1,
+  .pageTitle h1 {
     font-size: 3rem;
+  }
+  .pageTitle h1 {
+    padding-top: 1rem;
   }
   .title h5,
   .banner h5 {
@@ -456,5 +474,19 @@ footer p {
   .spacer {
     display: block;
   }
-
+  .profile {
+    min-height: 60vw;
+    min-width: 60vw;
+  }
+  .registered {
+    height: 150px;
+    width: 100px;
+  }
+  .services {
+    padding: 0;
+    font-size: 1rem;
+  }
+  .parallax {
+        background-attachment: scroll;
+    }
 }
