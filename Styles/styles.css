@@ -423,7 +423,7 @@ footer p {
 /* ----- MEDIA QUERIES -----*/
 
 /* mobile */
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 1000px) {
   html {
     font-size: 75%;
   }
