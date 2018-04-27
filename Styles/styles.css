@@ -431,19 +431,21 @@ footer p {
   .mainMenu {
     display: none;
   }
-  .title h1 {
+  .title h1,
+  .banner h1 {
     font-size: 3rem;
   }
-  .title h5 {
+  .title h5,
+  .banner h5 {
     font-size: 1.25rem;
     padding: 0.5rem;
-  }
-  .mainHeading h2 {
-    font-size: 3.5rem;
   }
   .title,
   .banner {
     min-height: 50vh;
+  }
+  .mainHeading h2 {
+    font-size: 3.5rem;
   }
   .mainHeading {
     min-height: 35vh;
