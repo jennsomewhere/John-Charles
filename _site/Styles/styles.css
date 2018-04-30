@@ -75,6 +75,8 @@ a {
 .border-emphasis {
   border-style: double;
   border: 1px solid rgb(232,162,66);
+  min-height: 24vw;
+  min-width: 24vw;
 }
 .position-relative {
   position: relative;
@@ -149,9 +151,12 @@ a {
 #loading h6 {
   font-size: 4rem;
 }
-
 body.loaded #loading {
   opacity: 0;
+}
+.slow-spin {
+  -webkit-animation: fa-spin 4s infinite linear;
+  animation: fa-spin 4s infinite linear;
 }
 
 /* ----- INDEX PAGE -----*/
@@ -176,7 +181,6 @@ body.loaded #loading {
 .services {
   font-size: 1.2rem;
 }
-
 .connectwithme {
   font-size: 1.1rem;
   color: rgb(13,12,33);
@@ -228,6 +232,12 @@ input[type=submit] {
 .mainText {
   font-size: 1.3rem;
   line-height: 1.6rem;
+}
+
+/* ----- FAQs PAGE -----*/
+
+.indent2 {
+  text-indent: 2rem;
 }
 
 /* ----- FAQs PAGE -----*/
