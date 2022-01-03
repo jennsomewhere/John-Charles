@@ -388,7 +388,7 @@ input[type=submit] {
   padding: 2rem 2rem 1.2rem 2rem;
 }
 #navservices { /*main menu dropdown*/
-  left: -1rem;
+  left: -1.5rem;
 }
 .dropdown-nav:hover .dropdown-content{
   display: block;
